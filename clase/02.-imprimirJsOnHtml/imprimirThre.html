@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imprimir Javascript en Html</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, impedit?
+    </p>
+
+        <label for="age">¿Cuál es su edad?</label>
+        <input type="text" id="age">
+        <input type="submit" onclick="edad()">
+        <span id="resultado">
+
+        </span>
+   
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nam.
+    </p>
+
+    <script>
+     
+        function edad(){
+
+            let age=parseInt(document.getElementById('age').value);
+            if(age>=18){
+                document.getElementById("resultado").innerHTML = "Usted tiene: "+age+" , por lo tanto es mayor";
+            }else{
+                document.getElementById("resultado").innerHTML = "Usted tiene: "+age+" , por lo tanto es menor";
+            }
+        }
+
+      
+    </script>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nam.
+    </p>
+</body>
+</html>
