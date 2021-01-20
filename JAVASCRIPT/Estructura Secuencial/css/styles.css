@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rojo{
+    color: rgb(141, 3, 3);
+}
+.verde{
+    color: rgb(19, 80, 19);
+}
+.fondo{
+    background-color: rgb(222, 240, 222);
+}
+.container{
+    
+    margin-top: 50px;
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    background-color: rgba(26, 143, 26, 0.657);
+    padding: 2%;
+}

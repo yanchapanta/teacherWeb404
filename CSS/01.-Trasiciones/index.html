@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .circle{
+        width: 300px;
+        height:300px;
+        background-color: peru;
+       /* solo se va ha mover dentro de la caja x,y*/
+        clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+        margin: auto;
+    }
+
+    .caja_imgWraper{
+        width: 50%;
+        background-color: peru;
+
+    }
+    .caja_img{
+        width: 100px;
+        position: relative;
+        left: 0;
+        transform: translateX(0);
+        transition: transform 1s 1s ease,
+                    lef 1s 0s ease;
+    }
+    .caja_imgWraper:hover .caja_img{
+        transform: scale(1.5);
+        left: 500px;
+
+    }
+</style>
+<body>
+    <h2>Transicion</h2>
+    <p>En traslate   |  cuando se mueve el 100% se mueve con respecto a la misma medidas del objeto</p>
+    
+    <div class="circle">
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Ir a link</a>
+
+    </div>
+    <h2>Animación</h2>
+    <p>¿Cuáles son las propiedades animables?</p>
+    <p>
+        text-align  | no es una propiedad animable por lo cual no se animable
+
+    </p>
+    <p>
+
+        tampoco es aplicable a propiedades inline
+    </p>
+    <p>
+        shortcut: tranform:property duration delay timing-function;
+    </p>
+    <div class="caja_imgWraper">
+        <img src="http://lorempixel.com/400/200" alt="imagen" class="caja_img">
+    </div>
+<!-- 
+    <style>
+        .objeto_container{
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            
+        }
+        .objeto_cuadrado{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid red;
+            transition: margin-left 1s,background-color 1s;
+        }
+        .objeto_container:hover .objeto_cuadrado{
+            margin-left: 100px;
+            background-color: seagreen;
+        }
+
+    </style>
+        <h2>Ejemplo de transition</h2>
+
+        <section class="objeto_container">
+            <div class="objeto_cuadrado">
+
+            </div>
+        </section> -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #40086e;
+    width: 100%;
+    height: 70px;
+    color: white;
+
+}
+.nav_logo{
+    height: 70px;
+}
+.nav_logo img{
+    height: 100%;
+    vertical-align: top;/*me borra lo sobrante*/
+}
+
+.menu{
+    position: fixed;
+    top: 0;    
+    width: 100%;
+    height: 100%;
+    
+    background-color: coral;
+    color: white; 
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path .5s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu_hamburguesa{
+    font-size: 1.5rem;
+
+    z-index: 10;
+    cursor: pointer;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+ 
+}
+.menu1{
+    clip-path: circle(150% at 100% 0%);
+}
+
+@media screen and (min-width:700px){
+    .nav{
+        justify-content: space-between;
+        padding: 0rem 4rem;
+    }
+    .menu{
+        
+        position: static;
+        clip-path: none;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: flex-end;
+
+    }
+    .menu a{
+        display: inline-block;
+        padding: 0rem 1.5rem;
+        transition: text-decoration .5s ease;
+    }
+    .menu a:hover{
+        text-decoration: underline;
+    }
+    .nav .menu_hamburguesa{
+        display: none;
+        opacity: 0;
+        background-color: red ;
+    
+    }
+}
