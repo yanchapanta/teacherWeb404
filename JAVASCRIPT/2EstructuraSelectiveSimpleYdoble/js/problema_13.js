@@ -21,16 +21,21 @@ container.innerHTML += codeDiv;
 const boton=document.querySelector(".btn");
 boton.addEventListener("click",(e)=>{
     e.defaultPrevented;
-    const valor1 = document.getElementById("valor1").value;
+    let valor1 = document.getElementById("valor1").value;
     const resultado = document.querySelector(".resultado");
 
-    const determinarChart=(valor1)=>{
+    const determinarChart=()=>{
         valor1=valor1.toLowerCase();
-        return (valor1=="a" ||valor1=="e" || valor1=="i" ||valor1=="o" ||valor1=="u")?`SI`:`NO`;
+        return (valor1=="a"
+         ||valor1=="e" 
+         || valor1=="i" 
+         ||valor1=="o" 
+         ||valor1=="u"
+         )?`SI`:`NO`;
     }
     
     resultado.innerHTML=`
-    El caracter "${valor1}" ingresado ${determinarChart(valor1)} una vocal
+    El caracter "${valor1}" ingresado ${determinarChart()} una vocal
     
     `;
 
