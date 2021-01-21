@@ -25,7 +25,8 @@ boton.addEventListener("click",(e)=>{
 
     const solution=(num1,num2)=>{
         if(num1<0 || num2<0 || isNaN(num1) || isNaN(num2)){
-            return `Solo números enteros`;
+            resultado.classList.add("rojo");
+            return `El programa admite solo números enteros`;
         }else{
             if (num1>num2) {
                 return `Número mayor: ${num1}`;                

@@ -6,7 +6,7 @@
     color: wheat;
 }
 .rojo{
-    color: rgb(141, 3, 3);
+    color: rgb(201, 71, 71) !important;
 }
 .verde{
     color: rgb(19, 80, 19);
@@ -72,4 +72,5 @@ input:focus{
     margin-left: 10px;
     color: #fff;
     background-color: transparent;
+    text-align: start;
 }
