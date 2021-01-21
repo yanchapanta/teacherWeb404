@@ -28,9 +28,16 @@ boton.addEventListener("click",(e)=>{
         valor1=valor1.toLowerCase();
         return (valor1=="a" ||valor1=="e" || valor1=="i" ||valor1=="o" ||valor1=="u")?`SI`:`NO`;
     }
-    
+    const colorVocal=()=>{
+        if (determinarChart(valor1)=="SI") {
+            return `<b style="background-color:transparent;">si</b>`;
+        }else{
+            return `<b style="color:red;background-color:transparent;">no</b>`;
+
+        }
+    }
     resultado.innerHTML=`
-    El caracter "${valor1}" ingresado ${determinarChart(valor1)} una vocal
+    El caracter "${valor1}" ingresado ${colorVocal()} una vocal
     
     `;
 
