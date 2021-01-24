@@ -1,9 +1,35 @@
 const c=console.log;
-let numero=5.3;
-console.log(numero);
-let palabra='hola mundo'
-console.log(palabra);
+/* let a = 5;
+let b = 2;
+let usuario="Carlo";
+c(a+b);
+c(a-b);
+c(a*b);
+c(a/b);
+c(a%b);
 
-const PI=3.1416;
+c("hola "+usuario); */
+//operadores de incremento y decremento
 
-c(PI);
+// let a=5;
+// c(a)
+// c(a++)
+// c(a)
+// c(++a)
+// c(a)
+// c(--a)
+
+let a=10;
+// a=a+3;
+a+=3;
+c(a)
+a-=3;
+c(a)
+a*=3;
+c(a)
+a/=3;
+c(a)
+a%=3;
+c(a)
+
+
