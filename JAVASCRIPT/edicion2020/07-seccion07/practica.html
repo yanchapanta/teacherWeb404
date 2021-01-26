@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/practica.css">
+</head>
+<body>
+    <h1>Practica de formularios</h1>
+    <form action="/google.es" id="form">
+        <div>
+            <label for="usuario">usuario</label>
+            <input type="text" name="usuario" id="usuario">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="male">male</label>
+            <input type="radio" name="male" id="male">
+            <label for="female">female</label>
+            <input type="radio" name="female" id="female">
+        </div>
+    
+        <div>
+            <label for="terms">Aceptar terminos y condiciones</label>
+            <input type="checkbox" name="terms" id="terms">
+     
+        </div>
+
+        <div>
+            <input type="submit" id="subEnviar" value="Enviar" disabled>
+        </div>
+
+
+    </form>
+
+     <script src="js/practica.js"></script>    
+</body>
+</html>

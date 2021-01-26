@@ -1,0 +1,22 @@
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  /* apply a natural box layout model to all elements, but allowing components to change */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /* Sections
+         ========================================================================== */
+  
+  /**
+       * Remove the margin in all browsers.
+       */
+  body {
+    margin: 0;
+    font-size: 1.4rem;
+  }
