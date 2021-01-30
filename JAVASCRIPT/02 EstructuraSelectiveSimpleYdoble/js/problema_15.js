@@ -3,7 +3,7 @@
 const container = document.querySelector(".container");
 
 const codeHeader=`
-<h1>13.- Determinar si un número entero es par o impar</h1>
+<h1>15.- Determinar si un número entero es par o impar</h1>
 `;
 const codeDiv=`
 <div>            
