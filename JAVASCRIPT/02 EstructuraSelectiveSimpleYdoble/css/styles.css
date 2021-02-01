@@ -38,7 +38,6 @@
 	background-color: transparent;
 }
 h2{
-    margin-top:4rem;
     padding:2rem 0rem;
     text-align: start;
     background: transparent;
@@ -89,12 +88,15 @@ input:focus {
 	background-color: transparent;
 	text-align: start;
 }
+
+
 form#formulario {
-	width: 800px;
 	display: flex;
     flex-flow: wrap;
     align-content: center;
-    background:transparent;
+	background:transparent;
+	width: 100%;
+	text-align: start;
 }
 form#formulario > div{
     background:transparent;
