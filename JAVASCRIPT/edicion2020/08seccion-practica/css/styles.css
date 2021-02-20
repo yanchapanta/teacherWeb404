@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    width: 50%;
+    margin:auto;
+}
+body{
+    user-select: none;
+}
+.task{
+    margin:1rem;
+    border:2px solid rgba(0, 128, 0, 0.651);
+    border-radius: 10px;
+}
+.task > h2{
+    padding: 2%;
+    border-bottom:2px solid rgba(0, 128, 0, 0.651);
+}
+.box{
+    
+    display: block;
+    cursor: move;
+    background-color: rgb(22, 70, 7);
+    padding: 4% 2%;
+    letter-spacing: .5rem;
+    color: white;
+    border-bottom: 2px solid #fff;
+    /* cursor: move; */
+}
+.box > p{
+    user-select: ;
+    /* background-color: yellow; */
+}
+.box:last-child{
+    border-bottom: 2px solid transparent;    
+    border-radius:0 0 10px 10px;    
+}
+
+.box:hover{
+    background-color: rgba(22, 70, 7, 0.555);
+
+    
+}
+.active{
+    background-color: white;
+    color:#000;
+}

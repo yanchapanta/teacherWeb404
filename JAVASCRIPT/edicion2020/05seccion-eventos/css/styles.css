@@ -1,0 +1,26 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 2rem;
+}
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    margin:1rem auto;
+}
+.gallery__item{
+    width: 200px;
+    border: 2px solid gray;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.red{
+    background-color: red;
+}

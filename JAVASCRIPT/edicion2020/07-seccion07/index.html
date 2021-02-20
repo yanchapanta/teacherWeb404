@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularion y expresiones regulares</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title">Forms </h1>
+    <form action="/google.com" method="post" id="form" class="form">
+        <div class="form__field">
+            <label for="name" class="form__label">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form__field">
+            <label for="email" class="form__label">email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form__field" id="gender">
+            <label for="male" class="form__label">male:</label>
+            <input type="radio"  name="male" value="male">
+            <label for="female" class="form__label">female:</label>
+            <input type="radio" name="female" value="female">
+        </div>
+        <div class="from__field">
+            <label for="terms">Acepto los términos de condicion</label>
+            <input type="checkbox" name="terms" id="terms">
+        </div>
+        <button type="submit" id="submitButton" disabled>Enviar</button>
+    </form>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
