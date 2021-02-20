@@ -1,0 +1,44 @@
+.tabla{
+    width: 50%;
+    margin: 1rem auto;
+    padding: .5rem;
+    background-color: blueviolet;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    margin: 0 3rem;
+    color: white;
+    cursor: help;
+}
+.row1{
+    border: 3px double white;
+    padding: .5rem 1rem;
+    margin: 0 .3rem;
+    cursor: grab;
+    
+    flex-grow: 1;
+}
+.row2 {
+    border: 3px double white;
+    margin: 0 .3rem;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.row2 > div{
+    width: 100%;
+    text-align: center;
+    padding: .5rem 1rem;
+    cursor: e-resize;
+
+}
+.row2 > div:hover{
+    display: block;
+    background-color: turquoise;
+}
+.titulo{
+    background-color: black;
+    color: white;
+}
