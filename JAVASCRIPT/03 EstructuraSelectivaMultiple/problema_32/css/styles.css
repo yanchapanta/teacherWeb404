@@ -1,0 +1,21 @@
+.tabla{
+    display: flex;
+    width: 40%;
+    
+    flex-flow: row wrap;
+    margin:1rem auto;
+    
+    border: 1px solid green;
+    padding: .5rem;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: .5rem;
+}
+
+.titulo{
+    background-color: black;
+    color: white;
+}

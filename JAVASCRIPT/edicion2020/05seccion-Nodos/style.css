@@ -1,0 +1,11 @@
+.green{
+    background-color: green;
+}
+.red{
+    background-color: rgb(236, 22, 22);
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+}

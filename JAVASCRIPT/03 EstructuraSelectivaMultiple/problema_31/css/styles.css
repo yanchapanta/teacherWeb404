@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.tabla{
+    border: 3px dashed green;
+    width: 30%;
+    margin:1rem auto;
+    padding: .5rem;
+
+}
+.tabla__title{
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+.tabla-row{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+.tabla-row:nth-child(2n-1){
+     background-color: whitesmoke;
+    }
+.tabla-row:hover{
+    background-color: rgb(128, 66, 66);
+    color: whitesmoke;
+
+}

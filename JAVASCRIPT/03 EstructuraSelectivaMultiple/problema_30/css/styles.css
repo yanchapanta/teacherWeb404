@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.tabla{
+    display:flex;
+    flex-flow:column;
+    border: 1px solid green;
+    width: 50%;
+    margin:2rem auto;
+    padding: 1rem;
+
+}
+.tabla .fila{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-grow: 1;
+    padding: .5rem;
+}

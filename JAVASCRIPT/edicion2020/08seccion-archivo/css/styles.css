@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	background-color: #ec407a;
+	font-family: sans-serif;
+	color: #fff;
+	user-select: none;
+	margin-left: 1rem;
+}
+img{
+    max-width: 100%;
+}
+.caja{
+	width: 200px;
+	height: 200px;
+	border: 2px dotted white;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}

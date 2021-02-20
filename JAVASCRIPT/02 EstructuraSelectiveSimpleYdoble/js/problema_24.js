@@ -61,27 +61,36 @@ formulario.addEventListener('submit',(e)=>{
                 <b style='color:peru'>x2:</b> ${Math.round(x2*100)/100}
                 
             `)
-            console.log(mas)
+            // console.log(mas)
         }else{
             reject('variable a y discriminante debe ser mayor igual de cero')
         }
     });
     isPromise.then(res=>{
         c(res)
-        sessionStorage.setItem(codigo,res)        
+        localStorage.setItem(codigo,res)        
     }).catch(rechazo=>{
         c(rechazo)
-        sessionStorage.setItem(codigo,rechazo)
+        localStorage.setItem(codigo,rechazo)
     })
+    
     infoSelect.innerHTML+=`<option>${codigo}</option>`
+   
+
     
 })
+let newArray
 infoSelect.addEventListener('change',(e)=>{
     let infoValue=document.getElementById('infoValue')
     let idSelect=infoSelect[infoSelect.selectedIndex].textContent
-    infoValue.innerHTML=sessionStorage.getItem(idSelect)
-
+    infoValue.innerHTML=localStorage.getItem(idSelect)
+    
 })
+for (let i = 0; i < infoSelect.selectedIndex; i++) {
+     [newArray]=[...localStorage.getItem(idSelect)]
+    
+}
 
+console.log(newArray)
 
 
