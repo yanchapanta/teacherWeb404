@@ -1,0 +1,8 @@
+[
+    {"school":"Nacional","level":"A"},
+    {"school":"Particular","level":"b"},
+    {"school":"Nacional","level":"B"},
+    {"school":"Particular","level":"c"},
+    {"school":"Nacional","level":"C"},
+    {"school":"Particular","level":"A"}
+]

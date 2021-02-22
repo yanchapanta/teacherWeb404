@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso </title>
+    <style>
+        *{
+            background-color: rgba(0, 0, 0, 0.63);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funciones</h1>
+<script >
+const opeBasic={
+    sum:"a+b",
+    rest:"a-b",
+    multiple:"a*b",
+    division:"a/b"
+}
+// Obtener el valor de una llave
+document.write(`
+Obtener el valor de una llave<br> 
+${opeBasic.sum}  -   ${opeBasic.division}
+
+<br><br>
+`);
+// Modificar el valor de una llave
+document.write(`
+Modificar el valor de una llave<br>
+${opeBasic.sum="x+y+z"}<br>
+${opeBasic.sum}
+
+<br><br>
+`);
+// Agregar nuevas propiedades a un objeto
+document.write(`
+Agregar nuevas propiedades a un objeto<br>
+${opeBasic.modulo="a%b"}<br>
+${console.log(`ver la nueva propiedad que agrego al objto:`,opeBasic)}
+
+<br><br>
+`);
+// Eliminar una propiedad de un objeto
+document.write(`
+Eliminar una propiedad de un objeto<br>
+${delete opeBasic.rest}<br>
+${console.log(`ver la propiedad que se elimino:`,opeBasic)}
+
+
+<br><br>
+`);
+// Recorrer las propiedades de un objeto
+let recorrer=()=>{
+    for(let ele in opeBasic ){
+    return `${opeBasic[ele]}  ${ele}`;
+ }
+}
+document.write(`
+Recorrer las propiedades de un objeto<br>
+${recorrer()}
+
+<br><br>
+`);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    background-color: rgba(85, 83, 83, 0.247);
+    color: white;
+}
+.form{
+    width:20%;
+    text-align:center;
+    margin:auto;
+}
+.form__field{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:1rem;
+
+}
