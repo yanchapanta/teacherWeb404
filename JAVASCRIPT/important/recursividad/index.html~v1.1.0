@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<<<<<<< HEAD:JAVASCRIPT/01.-edad/index.html
     <h2>¿Cómo calcular la edad en javascript?</h2>
     
+=======
+    <h1>Calcular edad</h1>
+    <h3>Realizar un formularion</h3>
+    <form action="">
+        <input type="text" placeholder="Nombre "  >
+        <input type="password" placeholder="Ingrese la edad"  >
+        <input type="submit" value="enviar">
+    </form>
+   <h2>el formulaion</h2>
+>>>>>>> v1.1.0:JAVASCRIPT/important/recursividad/index.html
     <script>
         function diasEntreFechas(fecha1,fecha2){
             const unDia=1000*60*60*24;

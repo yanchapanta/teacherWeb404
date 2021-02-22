@@ -4,4 +4,8 @@
     {"calidad":"02","producto":"03"},
     {"calidad":"02","producto":"01"},
     {"calidad":"01","producto":"02"}
+<<<<<<< HEAD
 ] 
+=======
+]
+>>>>>>> v1.1.0
