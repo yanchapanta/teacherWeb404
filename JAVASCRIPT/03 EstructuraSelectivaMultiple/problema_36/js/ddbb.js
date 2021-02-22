@@ -11,11 +11,9 @@ const showhData=async ()=>{
         console.log(error);
     }
 
-<<<<<<< HEAD
+
 } 
-=======
-}
->>>>>>> v1.1.0
+
 
 
 
