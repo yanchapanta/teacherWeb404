@@ -11,9 +11,7 @@ const showhData=async ()=>{
         console.log(error);
     }
 
-
-} 
-
+}
 
 
 

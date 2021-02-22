@@ -4,10 +4,7 @@ export const fPagar=function (datas){
         let calidad=parseInt(data.calidad);
         let producto=parseInt(data.producto);        
        let result=calcular(calidad,producto);
-
-       let id=datas.indexOf(data) 
-
-
+       let id=datas.indexOf(data)
         console.log(id);
         resultado.innerHTML+='<br>'+`
          Resultado usuario ${id + 1} es: ${result}
