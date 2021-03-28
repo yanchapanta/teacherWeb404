@@ -1,10 +1,20 @@
 # CURSOS DE HTML CSS JAVASCRIPT
+<<<<<<< HEAD
 
 ###### Para aprender más y ver los diferentes propuestos ingresa al siguiente link
 <a href="https://classroom.google.com/u/0/w/MjA1MDQ4MjYxOTEx/t/all">Ir a classroom</a>
 
 
 ## **Estructuras**
+=======
+###### Aprenderemos diseño web, para principiantes
+_______
+
+## JavaScript
+
+tipos de datos
+===
+>>>>>>> markdown
 1. Ejercico1
 
 - *Ejercico2*
@@ -14,12 +24,35 @@
 -  ~~Ejercicio04~~
 -  ~Ejercicio04~
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+<a href="https:/youtube.com">Ir a youtube</a>
+
+[link interno](index.html)
+
+imagenes
+====
+![imagenes](index.html)
+
+```JavaScript
+
+const palabra=null;
+```
+```HTML
+<a>link</a>
+```
+```CSS
+body{
+    margin:0;
+}
+```
+>>>>>>> markdown
 <!-- 
 hola que tal como esafs
  -->
@@ -27,6 +60,7 @@ hola que tal como esafs
  | id | Nombre |
  |----|--------|
  |001 | Marco  |
+<<<<<<< HEAD
 
 
 
@@ -45,6 +79,12 @@ hola que tal como esafs
 
 
 
+=======
+ 
+***
+
+>Autor: Marco Yanchapanta
+>>>>>>> markdown
 
 
 
