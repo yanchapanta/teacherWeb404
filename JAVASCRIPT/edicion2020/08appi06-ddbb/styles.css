@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	background-color: #2f3238;
+	font-family: sans-serif;
+	color: #ccc;
+	user-select: none;
+}
+
+.form {
+	width: 90%;
+	margin-top: 2rem;
+	text-align: center;
+	margin: auto;
+}
+
+.button {
+	background: orangered;
+	border: none;
+	padding: 0.2rem 0.8rem;
+	border-radius: 15px;
+	color: #ccc;
+	cursor: pointer;
+}
+.task {
+	display: flex;
+	width: 500px;
+}
+.tasks {
+	display: grid;
+	grid-template-columns: repeat(4, 15%);
+	align-items: center;
+}
