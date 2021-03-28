@@ -33,12 +33,13 @@ form.addEventListener('submit', (e) => {
 
 	// const person = {
 	// 	name: 'Marco',
-	// 	email: 'marco@gmai.com',
+	// 	email: 'marco@gmai.com', 
 	// };
 	// window.sessionStorage
 	// sessionStorage.setItem("person",JSON.stringify(person))
     // sessionStorage.setItem('name', 'doriam');
     sessionStorage.setItem(form.key.value,form.value.value)
+	
     keys.innerHTML+= `<option>${form.key.value}</option>`
     form.reset()
 });

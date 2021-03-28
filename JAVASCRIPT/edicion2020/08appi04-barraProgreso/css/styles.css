@@ -1,0 +1,35 @@
+:root{
+    --ancho:0;
+}
+.load-bar{
+    position: relative;
+    width:200px;
+    height: 20px;
+    background-color: brown;
+}
+
+.progress{
+    display: block;
+    color: white;
+    width: 0%;
+    height: 20px;
+    background-color: chartreuse;
+}
+/* canga multiple */
+.load-bar__multiple{
+    position: relative;
+    width:200px;
+    height: 20px;
+    background-color: brown;
+}
+.load-bar__multiple::after{
+
+    content: '';
+    background-color: steelblue;
+    /* display: block; */
+    position: absolute;
+    top:0;
+    bottom:0;
+    
+    width:var(--ancho);
+}

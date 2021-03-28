@@ -2,7 +2,7 @@ const c=console.log;
 const fileInput=document.getElementById('file');
 const img=document.getElementById('img');
 const text=document.getElementById('text');
-// EJERCICO CARGAR TEXTO
+// EJERCICO CARGAR TEXTO   
 fileInput.addEventListener('change',(e)=>{
     // e.target.files
     const file=e.target.files[0];

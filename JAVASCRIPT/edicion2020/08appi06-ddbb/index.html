@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>IndexedDB</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<form id="form" class="form">
+			<label for="task">Tarea</label>
+			<input type="text" name="task" />
+			<select name="priority">
+				<option value="low">bajo</option>
+				<option value="normal">Normal</option>
+				<option value="high">alto</option>
+			</select>
+			<button class="button" name="button">Añadir Tarea</button>
+		</form>
+		<div id="tasks" class="tasks"></div>
+		<script src="scripts.js"></script>
+	</body>
+</html>
