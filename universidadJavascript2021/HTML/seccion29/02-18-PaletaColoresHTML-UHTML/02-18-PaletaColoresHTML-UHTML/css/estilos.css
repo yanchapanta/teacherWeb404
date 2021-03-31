@@ -1,10 +1,37 @@
+:root{
+    --primario:#8a030e;
+    --secundario:#bb4d00;
+    --colorFondo:#fff;
+}
+
+
+/* h1{
+    color:rgb(112, 44, 44) !important;
+} */
 h1{
-    color:#e63946; 
+    color:red ;
+}
+
+h1.titulo{
+    color:green;
+}
+h1.titulo{
+    color:rgb(13, 0, 128);
+}
+#idSaludo{
+   color:#230553; 
+}
+
+.titulo{
+    color:var(--secundario);
+}
+h1{
+    color:var(--primario); 
     text-align: center;
  }
  p{
      color:#457b9d;
-     background-color: #f1faee;
+     background-color: var(--colorFondo);
      padding: 15px;
      border: 10px solid #1d3557;
      /*margin-top: 40px;
@@ -13,4 +40,7 @@ h1{
      margin-left: 10px;*/
      margin:auto 50px;
      text-align: center;
+ }
+ h1{
+    color:green;
  }

@@ -1,21 +1,49 @@
-h1{
-    color: #f07167;
+:root{
+    --colorFondo:#e63946;
+    --colorPrincipal:#1d3557;
+    --colorSecundario:#457b9d;
+    --colorTerciario:#ffff;
 }
+/* ONDEN DE IMPORTANCIA
+h1, span, header   selectores tipo etiqueta
+.clas               selectore tipo clase
+#id                 selectores tipo id
+h1.titulo           
 
+ */
+/* h1.titulo{
+     background-color: white;
+} */
+
+.titulo{
+    background-color: #457b9d;
+}
+h1{
+    background-color:var(--colorFondo);
+    color:var(--colorTerciario);
+}
+h1{
+    color: #7bf067 !important;
+
+}
 a:link {
     color:#fb8500;
     text-decoration: none;
 }
 a:visited{
-    color:#219ebc;
+    color:#e70cdc;
     text-decoration: none;
 }
 /*cuando nos ponemos encima del link*/
 a:hover{
-    color:#8ecae6;
+    color:#ee1065;
     text-decoration: underline;
 }
 a:active {
-    color: #023047;
+    color: #1fdd11;
+    text-decoration: underline;
+}
+a:active {
+    color: #261e97;
     text-decoration: underline;
 }
