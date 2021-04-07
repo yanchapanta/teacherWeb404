@@ -1,0 +1,16 @@
+.linea{
+    background-color: black;
+    color: #fff;
+}
+p strong{
+    color: green;
+}
+.mover{
+    display: block;
+    background-color: red;
+    color: white;
+    width: 200px;
+}
+.mover:hover{
+    margin-left: 3rem;
+}

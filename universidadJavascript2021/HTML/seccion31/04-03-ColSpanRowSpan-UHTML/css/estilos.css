@@ -1,12 +1,52 @@
-table{
+*{
+    margin: 0;
+    padding:0;
+    /* por defecto biene el rem en 16px  */
+    font-size: 20px;
+}
+section.tabla-datos{
+    /* text-align: center; */
+    font-size: 1rem;
+    width: 90%;
+    margin:1rem auto;
+    background-color: aqua;
+}
+section.tabla-datos  h2{
+    text-align: center;
+    font-size: 2rem;
+}
+section.tabla-datos table{   
+    width: 100%;
+    
+    border-collapse: collapse;
+    /* border-spacing: 1rem; */
+    border: 3px solid rgb(233, 8, 8);
+
+}
+.derecha{
+}
+section.tabla-datos .tbody{
+    border-right: 1px solid red;
+
+}
+
+tr,th,td{
+
+    border: 1px solid green;
+    padding: .5rem;
+   
+}
+
+
+/* table{
     width: 100%;
 }
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
     /* border-spacing: 5px; */
-    padding: 5px;
-}
+   
+} */
 /*
 td{
     text-align: center;

@@ -7,7 +7,7 @@ ol li{
 }
 
 ol li::before{
-    content: 'Curso ' counter(contador) ') ';
+    content: '"Curso" ' counter(contador) ') ';
     color:#ff6f00;
 }
 ol li::after{

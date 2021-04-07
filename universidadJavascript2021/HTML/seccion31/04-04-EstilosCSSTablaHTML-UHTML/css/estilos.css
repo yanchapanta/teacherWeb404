@@ -19,12 +19,20 @@ th{
 }
 /*renglones pares*/
 tr:nth-child(even){
-    background-color: #f1faee;
+    background-color: #3fa71d;
 }
 /*renglones impares*/
 tr:nth-child(odd){
     background-color: #a8dadc;
 }
+/* 
+
+tr:nth-last-child(){
+    background-color: #e63946;
+} 
+
+*/
+
 
 /*
 td{

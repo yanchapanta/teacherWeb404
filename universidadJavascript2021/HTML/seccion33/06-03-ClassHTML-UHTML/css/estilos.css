@@ -14,3 +14,33 @@ p{
     background-color: #f1faee;
     text-align: center;
 }
+div{
+    width: 200px;
+    height:50px;
+    background-color: aqua;
+    border: 3px dashed green;
+}
+.caja{
+    border: none;
+}
+.caja1{
+    background-color: red;
+}
+.border{
+    color: rgb(238, 217, 30);
+    border: 3px solid #1f1f20;
+}
+.caja15{
+    background-color: green;
+    color: #fff;
+}
+.caja1,.caja2,.caja3,.caja4{
+    margin-bottom:1rem;
+    border: 3px solid green;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius: 20px;
+    /* 
+    shortcut
+    border-radius: 20px; 
+    */
+}

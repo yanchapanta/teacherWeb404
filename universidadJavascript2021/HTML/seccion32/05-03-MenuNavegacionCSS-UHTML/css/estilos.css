@@ -1,9 +1,11 @@
 h1{
-    color: #1d3557;
+    color: #2a6bc7;
 }
 ul{
     list-style-type: none;
+    /* list-style: none; */
     background-color: #457b9d;
+    /* muestra de manera independiente */
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -20,4 +22,14 @@ li a{
 }
 li a:hover{
     background-color: #1d3557;
+}
+/* direrencia tipo linea y bloque */
+.bloque{
+    width: 300px;
+    background-color: #2a6bc7;
+}
+.linea{
+    display: block;
+    width: 300px;
+    background-color: #365177;
 }
