@@ -11,7 +11,17 @@ do{
 }while(contador < 3);
 */
 
-for(let contador = 0; contador < 3 ; contador++ ){
+/*
+ for(let contador = 0; contador < 3 ; contador++ ){
     console.log(contador);
 }
-console.log("Fin ciclo for");
+console.log("Fin ciclo for"); 
+*/
+
+let x=5,
+    y=2;
+let z= x + y;//7
+z=x++;
+console.log(z);//5
+console.log(x++);//6
+console.log(x);//7

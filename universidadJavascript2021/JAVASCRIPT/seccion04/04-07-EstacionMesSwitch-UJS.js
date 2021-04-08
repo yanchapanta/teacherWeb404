@@ -2,6 +2,7 @@ let mes = 11;
 let estacion = 'Estación desconocida';
 
 switch( mes ){
+    
     case 1: case 2: case 12:
         estacion = 'Invierno';
         break;
@@ -17,4 +18,5 @@ switch( mes ){
     default:
         estacion = 'Valor incorrecto';                
 }
+
 console.log(estacion);

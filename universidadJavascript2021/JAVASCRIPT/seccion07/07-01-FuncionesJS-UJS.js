@@ -1,4 +1,5 @@
-miFuncion(4, 2);
+miFuncion(4, 2);//Hoisting=levantado
+
 
 //Declaración de la función
 function miFuncion(a, b){
