@@ -7,7 +7,9 @@
     color: #f72585;
     text-align: center;
     margin: 15px;
+    margin-top: 47px;
 }
+
 h2{
     color:#3f37c9;
 }
@@ -17,10 +19,11 @@ p{
 /*Clase de CSS*/
 .tarjeta{
     border: 10px solid #560bad;
-    background-color: #f1faee;
-    text-align: center;
+    background-color: #83ea61;
+    text-align: right;
     margin: 10px 115px;
-    padding: 15px;
+    padding: 12px;
+    margin: 32px 90px;
 }
 .titulo{
     color: #f72585;

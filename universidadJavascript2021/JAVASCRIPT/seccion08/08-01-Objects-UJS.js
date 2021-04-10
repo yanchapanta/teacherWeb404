@@ -2,6 +2,7 @@ let x = 10;
 console.log(x.length);
 
 let persona = {
+    
     nombre: 'Juan',
     apellido: 'Perez',
     email: 'jperez@mail.com',

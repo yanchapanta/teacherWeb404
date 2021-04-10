@@ -1,6 +1,6 @@
 let x = 10;
 console.log(x.length);
-
+//FORMA UNO
 let persona = {
     nombre: 'Juan',
     apellido: 'Perez',
@@ -18,6 +18,8 @@ console.log(persona.nombreCompleto());
 
 console.log(persona);
 
+
+//FORMA DOS
 let persona2 = new Object();
 persona2.nombre = 'Carlos';
 persona2.direccion = 'Saturno 15';

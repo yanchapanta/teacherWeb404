@@ -21,3 +21,11 @@ p{
 .titulo{
     color: #f72585;
 }
+.nav{
+    background-color: #1f3a56;
+    color: #ffffff;    
+}
+.nav a{
+    color: #ffffff; 
+    text-decoration: none;   
+}

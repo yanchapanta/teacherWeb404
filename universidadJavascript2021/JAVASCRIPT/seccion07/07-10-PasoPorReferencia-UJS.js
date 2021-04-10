@@ -10,6 +10,8 @@ cambiarValor(x);//10
 console.log(x);
 //console.log(a);
 
+
+//-------------------------------------
 const persona = {
     nombre: 'Juan',
     apellido: 'Perez'

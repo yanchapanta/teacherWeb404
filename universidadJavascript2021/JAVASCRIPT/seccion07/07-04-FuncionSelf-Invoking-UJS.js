@@ -13,6 +13,8 @@ let sumar = function (a, b){return a + b};
 resultado = sumar(1, 2);
 console.log(resultado);
 
+
+//FUNCION AUTO EJECUTABLE SELF INVOKING
 (function (a, b){
     console.log('Ejecutando la función: ' + (a + b));
 })(3, 4);
