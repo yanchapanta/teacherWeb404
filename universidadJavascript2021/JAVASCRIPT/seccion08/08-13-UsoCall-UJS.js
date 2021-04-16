@@ -1,4 +1,4 @@
-let persona1 = {
+const persona1 = {
     nombre: 'Juan',
     apellido: 'Perez',
     nombreCompleto: function(){
@@ -6,7 +6,7 @@ let persona1 = {
     }
 }
 
-let persona2 = {
+const persona2 = {
     nombre: 'Carlos',
     apellido: 'Lara'
 }

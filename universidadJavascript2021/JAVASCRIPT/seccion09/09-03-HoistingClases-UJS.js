@@ -15,9 +15,21 @@ class Persona{
     }
 }
 
-let persona1 = new Persona('Juan', 'Perez');
+const persona1 = new Persona('Juan', 'Perez');
 persona1.nombre = 'Juan Carlos';//set nombre('Juan Carlos')
 console.log( persona1.nombre );//get nombre
 
-let persona2 = new Persona('Karla', 'Juarez');
+const persona2 = new Persona('Karla', 'Juarez');
 console.log( persona2 );
+
+const persona3 = new Persona('Karla', 'Juarez');
+console.log( persona3 );
+
+
+
+const miF=function (){
+
+    return 'hola mundo';
+
+}
+console.log(miF());

@@ -19,8 +19,8 @@ padre.nombre = 'Carlos';
 console.log( padre );
 console.log( madre );
 
-let miObjeto = new Object();
-let miObjeto2 = {};
+const miObjeto = new Object();
+const miObjeto2 = {};
 
 let miCadena1 = new String('Hola');
 let miCadena2 = 'Hola';

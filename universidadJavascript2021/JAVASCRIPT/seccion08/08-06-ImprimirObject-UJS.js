@@ -1,4 +1,4 @@
-let persona = {
+const persona = {
     nombre: 'Juan',
     apellido: 'Perez',
     email: 'jperez@mail.com',
@@ -18,7 +18,13 @@ delete persona.tel;
 console.log( persona );
 
 //Concatenar cada valor de cada propiedad
-console.log( persona.nombre + ', ' + persona.apellido);
+console.log('Nombre: '+ persona.nombre + ', Apellido' + persona.apellido);
+//backtick 
+console.log(`
+Nombre: ${persona.nombre} \n
+Apellido: ${persona.apellido}
+
+`)
 
 //for in
 for( nombrePropiedad in persona){
@@ -30,3 +36,20 @@ console.log( personaArray );
 
 let personaString = JSON.stringify( persona );
 console.log( personaString );
+
+
+
+
+
+
+
+/* 
+for(let property in persona) {
+    console.log(persona);
+}
+
+//   digo property xd
+  
+for(let property of persona) {
+    console.log(property);
+} */

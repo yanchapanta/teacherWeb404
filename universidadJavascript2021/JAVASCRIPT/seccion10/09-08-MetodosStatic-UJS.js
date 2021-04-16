@@ -50,14 +50,15 @@ class Empleado extends Persona{
     }
 }
 
-let persona1 = new Persona('Juan', 'Perez');
+const persona1 = new Persona('Juan', 'Perez');
 console.log( persona1.toString() );
 
-let empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
+const empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
+console.log(empleado1.saludar);//error
 console.log( empleado1 );
 console.log( empleado1.nombreCompleto() );
 console.log( empleado1.toString());
-
+//EL MOTODO ESTATICO SOLO FUNCIONA PARA CLASES
 //persona1.saludar(); no es posible llamar un método static desde un objeto
 Persona.saludar();
 Persona.saludar2(persona1);

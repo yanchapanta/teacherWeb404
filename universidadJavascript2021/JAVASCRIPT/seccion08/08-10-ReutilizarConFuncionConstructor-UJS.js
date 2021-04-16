@@ -8,10 +8,10 @@ function Persona(nombre, apellido, email){
     }
 }
 
-let padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
+const padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
 console.log( padre.nombreCompleto() );
 
-let madre = new Persona('Laura', 'Quintero', 'lquintero@mail.com');
+const madre = new Persona('Laura', 'Quintero', 'lquintero@mail.com');
 console.log( madre.nombreCompleto() );
 
 padre.nombre = 'Carlos';

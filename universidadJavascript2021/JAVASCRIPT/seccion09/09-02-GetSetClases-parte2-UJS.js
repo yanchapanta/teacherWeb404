@@ -3,14 +3,14 @@ class Persona{
         this._nombre = nombre; 
         this._apellido = apellido;
     }
-    get nombre(){
+    get getNombre(){
         return this._nombre;
     }
-    set nombre(nombre){
+    set setNombre(nombre){
         this._nombre = nombre;
     }
 }
 
-let persona1 = new Persona('Juan', 'Perez');
-persona1.nombre = 'Juan Carlos';//set nombre('Juan Carlos')
-console.log( persona1.nombre );//get nombre
+const persona1 = new Persona('Juan', 'Perez');
+persona1.setNombre = 'Juan Carlos';//set nombre('Juan Carlos')
+console.log( persona1.getNombre );//get nombre

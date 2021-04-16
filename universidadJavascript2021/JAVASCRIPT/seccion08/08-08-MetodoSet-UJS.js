@@ -4,10 +4,10 @@ let persona = {
     email: 'jperez@mail.com',
     edad: 28,
     idioma: 'es',
-    get lang(){
+    get getLang(){
         return this.idioma.toUpperCase();
     },
-    set lang( lang ){
+    set setLang( lang ){
         this.idioma = lang.toUpperCase();
     },
     get nombreCompleto(){
@@ -17,7 +17,7 @@ let persona = {
 
 console.log( persona.lang );
 
-persona.lang = 'en';//se llama metodo set lang
+persona.setLang = 'en';//se llama metodo set lang
 
-console.log( persona.lang );//se llama metodo get lang
+console.log( persona.getLang );//se llama metodo get lang
 console.log( persona.idioma );

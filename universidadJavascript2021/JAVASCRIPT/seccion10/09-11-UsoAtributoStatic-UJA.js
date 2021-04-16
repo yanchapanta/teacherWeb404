@@ -53,15 +53,34 @@ class Empleado extends Persona{
         return super.nombreCompleto() + ', ' + this._departamento;
     }
 }
-
-let persona1 = new Persona('Juan', 'Perez');
+//base datos persona
+const arrayPersona=[
+    {nombre:'Juan', apellido:'Perez'},//0
+    {nombre:'Pablo', apellido:'Gutierez'}//1
+    {nombre:'Anita', apellido:'Gutierez'}//1
+    {nombre:'Pablo', apellido:'Gutierez'}//1
+    {nombre:'Pepe', apellido:'Gutierez'}//1
+    {nombre:'Pablo', apellido:'Gutierez'}//1
+    {nombre:'Gorgue', apellido:'Gutierez'}//1
+    {nombre:'Pablo', apellido:'Gutierez'}//1
+    {nombre:'Pablo', apellido:'Gutierez'}//1
+]
+//base datos empledos
+runPerson(arrayPersona);
+function runPerson(arr){
+    
+    for (const key in arr) {
+        new Persona(arr[key].nombre,arr[key].apellido);
+    }
+}
+// const persona1 = new Persona(arrayPersona[0].nombre,arrayPersona[0].apellido);
 console.log( persona1.toString() );
 
-let empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
+const empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
 console.log( empleado1.toString() );
 
 console.log( Persona.contadorPersonas );
 
-let persona2 = new Persona('Karla', 'Ramirez');
+const persona2 = new Persona('Karla', 'Ramirez');
 console.log( persona2.toString() );
 console.log( Persona.contadorPersonas);

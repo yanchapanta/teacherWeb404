@@ -5,6 +5,7 @@ class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre; 
         this._apellido = apellido;
+        // this.contadorObjetosPersona no poner esto nunca
         Persona.contadorObjetosPersona++;
         console.log( 'Se incrementa contador:' + Persona.contadorObjetosPersona);
     }
@@ -54,11 +55,12 @@ class Empleado extends Persona{
         return super.nombreCompleto() + ', ' + this._departamento;
     }
 }
-
-let persona1 = new Persona('Juan', 'Perez');
+//clase padre
+const persona1 = new Persona('Juan', 'Perez');
 console.log( persona1.toString() );
-
-let empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
+//clase hijo heredado
+const empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
+const empleado2 = new Empleado('Rosa', 'Cruz', 'Programacion');
 console.log( empleado1 );
 console.log( empleado1.nombreCompleto() );
 console.log( empleado1.toString());

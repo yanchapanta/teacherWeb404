@@ -37,9 +37,11 @@ class Empleado extends Persona{
     }
 }
 
-let persona1 = new Persona('Juan', 'Perez');
+//padre
+const persona1 = new Persona('Juan', 'Perez');
 console.log( persona1 );//get nombre
 
-let empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
+//hijo hereda de padre
+const empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
 console.log( empleado1 );
-console.log( empleado1.nombreCompleto() );
+console.log( empleado1.nombreCompleto());

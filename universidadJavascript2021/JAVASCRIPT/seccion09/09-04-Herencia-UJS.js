@@ -14,11 +14,12 @@ class Persona{
     }
     set apellido(apellido){
         this._apellido = apellido;
-    }
+    }    
+
 }
 
 class Empleado extends Persona{
-    constructor(nombre, apellido, departamento){
+    constructor(nombre, apellido, departamento){//nombre, apellido | es como si fueran los parametros del padre
         super(nombre, apellido);//llamar al constructor de la clase padre
         this._departamento = departamento;
     }
