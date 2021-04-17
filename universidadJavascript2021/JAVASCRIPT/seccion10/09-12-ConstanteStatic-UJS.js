@@ -2,14 +2,14 @@ class Persona{
 
     static contadorPersonas = 0;//atributo de nuestra clase
 
-    static get MAX_OBJ(){
+    static get MAX_OBJETO(){
         return 5;
     }
 
     constructor(nombre, apellido){
         this._nombre = nombre; 
         this._apellido = apellido;
-        if( Persona.contadorPersonas < Persona.MAX_OBJ){
+        if( Persona.contadorPersonas < Persona.MAX_OBJETO){/// 1,2,3,4 <5
             this.idPersona = ++Persona.contadorPersonas;
         }
         else{
@@ -44,7 +44,9 @@ class Persona{
     static saludar2(persona){
         console.log(persona.nombre + ' ' + persona.apellido);
     }
+
 }
+// AltGr + } + espacio
 
 class Empleado extends Persona{
     constructor(nombre, apellido, departamento){
@@ -64,7 +66,8 @@ class Empleado extends Persona{
 }
 
 let persona1 = new Persona('Juan', 'Perez');
-console.log( persona1.toString() );
+    persona1.nombre='Julieta';//set
+console.log( persona1.nombre );//get
 
 let empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
 console.log( empleado1.toString() );
@@ -75,12 +78,29 @@ let persona2 = new Persona('Karla', 'Ramirez');
 console.log( persona2.toString() );
 console.log( Persona.contadorPersonas);
 
-console.log( Persona.MAX_OBJ);
-Persona.MAX_OBJ = 10;
-console.log( Persona.MAX_OBJ);
+console.log( Persona.MAX_OBJETO);
+Persona.MAX_OBJETO = 10;//no se puede modificar
+console.log( Persona.MAX_OBJETO);
 
-let persona3 = new Persona('Mariano', 'Lara');
-let persona4 = new Persona('Armando', 'Toledo');
-let persona5 = new Persona('Laura', 'Quintero');
-console.log( persona5.toString() );
+let persona3 = new Persona('Mariano', 'Lara');//4
+let persona4 = new Persona('Armando', 'Toledo');//5
+let persona5 = new Persona('Laura', 'Quintero');//
+console.log( persona4.toString() );
+
+{/* <form id='form'>
+    <input id='idNombre' type='text' name='nombre'>
+</fomr> */}
+// let form=document.getElementById('form');
+// let valor=form.nombre.value
+// valor=parseInt(valor);
+// let idNombre=parseInt(document.getElementById('idNombre').value);
+
+
+
+// function miFuncion(a,b){
+//     let variable1=a;
+// }
+// miFuncion(12,23);
+
+
 
