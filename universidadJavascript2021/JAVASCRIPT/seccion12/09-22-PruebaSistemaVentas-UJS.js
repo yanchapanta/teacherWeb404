@@ -85,6 +85,10 @@ let producto2 = new Producto('Camisa', 100);
 
 let orden1 = new Orden();
 orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto2);
+orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto1);
 orden1.agregarProducto(producto2);
 orden1.mostrarOrden();
 
@@ -93,7 +97,6 @@ let producto3 = new Producto('Cinturon', 50);
 orden2.agregarProducto(producto3);
 orden2.agregarProducto(producto1);
 orden2.agregarProducto(producto2);
-orden2.agregarProducto(producto3);
 orden2.agregarProducto(producto1);
-orden2.agregarProducto(producto2);
+orden2.agregarProducto(producto1);
 orden2.mostrarOrden();

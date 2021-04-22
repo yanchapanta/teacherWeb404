@@ -26,7 +26,7 @@ class Producto{
     set precio(precio){
         return this._precio = precio;
     }
-
+    //Sobre escritura el metodo de la clase padre(object);
     toString(){
         return `idProducto: ${this._idProducto}, nombre: ${this._nombre}, precio: $${this._precio}  `;
     }
