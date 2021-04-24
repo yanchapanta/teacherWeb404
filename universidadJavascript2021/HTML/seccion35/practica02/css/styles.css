@@ -1,0 +1,45 @@
+:root{
+    --colorFondo:hsl(0, 0%, 90%);
+    --colorNegro:#000000;
+    --colorPrincipal:#6ca532;
+}
+*{
+    /* background-color: #ff0000; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{  
+    background: var(--colorFondo) url(../img/paven.png) repeat right ;  
+
+}
+h1{
+    color:var(--colorPrincipal);
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 20%;
+    margin:auto;
+
+}
+.logo img{
+    filter: contrast(1);
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px gray;
+    transition:text-shadow .5s ease ;
+}
+header h1:hover{
+    text-shadow: 0px 0px 1px gray,0px 0px 2px var(--colorNegro);
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: #6ca532;
+}
+
