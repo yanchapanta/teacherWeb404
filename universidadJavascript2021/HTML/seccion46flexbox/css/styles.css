@@ -1,0 +1,49 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    /* condicion para utiliza align-items la dimencion altura */
+
+	align-items: center;
+
+	width: 80%;
+	height: 20rem;
+	border: 2px solid green;
+	/* background: rgb(25, 138, 231, 0.2); */
+}
+
+.item {
+	width: 200px;
+	height: 200px;
+	background: grey;
+	color: white;
+	font-size: 4rem;
+	border: 1px solid white;
+}
+.item-1{
+    align-self: flex-end;
+    background-color: rebeccapurple;
+}
+.item-2{
+    background-color: rgb(22, 211, 179);
+}
+.item-3{
+    align-self: flex-start;
+    background-color: rgb(219, 111, 23);
+}
+/* transisiones */
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: #6ca532;
+    transition-property:margin-left;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 4s;
+    /* transition:all 2s ease ; */
+
+    
+}
+.caja.caja:hover{
+    margin-left: 6rem;
+}
