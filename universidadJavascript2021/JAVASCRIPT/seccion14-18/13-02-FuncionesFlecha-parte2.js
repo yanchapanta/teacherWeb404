@@ -2,13 +2,16 @@ let miFuncion = function (){
     console.log('saludos desde mi función');
 }
 
-// const miFuncionFlecha = () => {
-//     console.log('saludos desde mi función flecha');
+// let miFuncion = ()=>{
+//     console.log('saludos desde mi función');
 // }
 
-//const miFuncionFlecha = () => console.log('saludos desde mi función flecha');
 
+// forma uno
+// const miFuncionFlecha = () => console.log('saludos desde mi función flecha');
 //miFuncionFlecha();
+
+
 
 // const saludar = () => {
 //     return 'Saludos desde función flecha';

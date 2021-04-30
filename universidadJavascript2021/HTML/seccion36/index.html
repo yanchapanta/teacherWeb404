@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+
+		<img
+			src="https://lenguajehtml.com/img/logo.png"
+			alt="Logotipo de HTML5"
+			width="400"
+			height="453"
+		/>
+        <picture>
+            <source srcset="imagen.webp" />
+            <!-- Formato WebP -->
+            <source srcset="imagen.jxr" />
+            <!-- Formato JPEG XR -->
+            <img src="imagen.jpg" alt="Descripción de la imagen" />
+            <!-- Fallback -->
+          </picture>
+
+          <picture>
+            <source media="(min-width: 600px)"
+                    srcset="html5-logo-xl.png" />
+            <source media="(min-width: 300px) and (max-width: 600px)"
+                    srcset="html5-logo-large.png" />
+            <source media="(max-width: 50px)"
+                    srcset="html5-logo-small.png" />
+            <img src="html5-logo-medium.png" alt="HTML5 logo" />
+          </picture>
+
+	</body>
+</html>

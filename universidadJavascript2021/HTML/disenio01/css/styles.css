@@ -1,41 +1,205 @@
-:root{
-    --colorFondo:hsl(0, 0%, 90%);
-    --colorNegro:#000000;
-    --colorPrincipal:#6ca532;
+:root {
+	--colorFondo: hsl(0, 0%, 90%);
+	--colorNegro: #393c44;
+	--colorPrincipal: #6ca532;
 }
-*{
-    /* background-color: #ff0000; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	/* background-color: #ff0000; */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
-body{  
-    background: var(--colorFondo) url(../img/paven.png) repeat right ;  
+/* CONFIGURACION GLOBAL */
+body {
+	background: var(--colorFondo) url(../img/paven.png) repeat right;
+}
+h1 {
+	color: var(--colorPrincipal);
+}
+img {
+	width: 100%;
+}
+.logo {
+	width: 20%;
+	margin: auto;
+}
+.logo img {
+	filter: contrast(1);
+}
+a{
+    text-decoration: none;
+    color: var(--colorPrincipal);
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    box-shadow: 1px 1px 2px solid gray;
+    text-align: start;
+    outline: none;
+    padding: .5rem 1rem;
+    transition:border .5s ease ;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover{
+    border: 1px solid rgba(0, 0, 0, 0.418);
+}
+input[type="submit"]{
+    border: none;
+    background-color: var(--colorPrincipal);
+    color: var(--colorFondo);
+    border-radius: 7px;
+    padding: .5rem 1rem;
+    transition:background-color .5s ease, box-shadow .5s ease;
+}
+input[type="submit"]:hover{
+    background-color:  #568626c9;
+    box-shadow: 0px 0px 1px #233a0c inset;
+    
+}
+header h1 {
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px gray;
+	transition: text-shadow 0.5s ease;
+}
+header h1:hover {
+	text-shadow: 0px 0px 1px gray, 0px 0px 2px var(--colorNegro);
+}
+/* <!-- 
+MENU
+--> */
+.ul {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    /* condicion tener altura */
+    align-items: center;
+	background-color: var(--colorNegro);
+    flex-grow: 1;
+}
+.ul li {
+	list-style-type: none;
+	padding: 0.5rem 1rem;
+	border-right: 1px solid #ffffff7a;
+	transition: background-color 0.5s ease, box-shadow 0.5s ease,
+		transform 0.5s ease, border-left 0.5s ease;
+}
+.ul li:first-child {
+	border-left: 1px solid #ffffff7a;
+}
 
+.ul li:hover {
+	border-left: 1px solid #ffffff7a;
+	background-color: #6ca532;
+	box-shadow: 0px 0px 2px #6ca532 inset, 1px 1px 4px #6ca532 inset;
+	transform: scale(1.08);
 }
-h1{
-    color:var(--colorPrincipal);
+.ul li:active {
+	background-color: #568626;
+	box-shadow: 0px 0px 2px #568626 inset, 1px 1px 4px #568626 inset;
 }
-img{
+/* .ul li:nth-child(1){
+    order: 10;
+}
+.ul li:nth-child(2){
+   
+    order: 2;
+}
+.ul li:nth-child(3){
+    order: 3;
+}
+.ul li:nth-child(4){
+    order: 4;
+}
+.ul li:nth-child(5){
+    order: 5;
+}
+.ul li:nth-child(6){
+    order: 6;
+}
+.ul li:nth-child(7){
+    order: 7;
+}
+.ul li:nth-child(8){
+    order: 8;
+}
+.ul li:nth-child(9){
+    order: 9;
+}
+.ul li:nth-child(10){
+    order: 1;
+} */
+
+.ul li a {
+	display: block;
+	text-decoration: none;
+	color: var(--colorFondo);
+	font-weight: 400;
+	user-select: none;
+}
+/* <!-- 
+PRINCIPAL 
+--> */
+/* <!-- 
+ASIDE 
+--> */
+section {
+	width: 80%;
+	margin: 1rem auto;
+
+	gap: 2rem;
+	display: flex;
+	height: 600px;
+	justify-content: space-between;
+}
+.tarject,
+.phrase,
+main {
+	box-shadow: 0px 0px 1px #393c44, 1px 0px 2px #393c44, 0px 1px 5px #393c44;
+	background-color: #ffffff;
+}
+
+aside {
+	flex-basis: 25%;
+	height: auto;
+}
+main {
+	flex-basis: 75%;
+	height: 200px;
+}
+
+.tarject,
+.phrase {
+	padding: 0.5rem;
+}
+.phrase {
+	margin-top: 2rem;
+}
+.tarject h3 {
+	background-color: var(--colorFondo);
+	text-align: center;
+	font-weight: 800;
+}
+.form {
+    margin: 1rem 0;
+	
+	/* los elementos salten a la siguiente linea */
+	/* flex-wrap: wrap; */
+    
+}
+.form label,.form input{
     width: 100%;
-}
-.logo{
-    width: 20%;
-    margin:auto;
-
-}
-.logo img{
-    filter: contrast(1);
-}
-
-header h1{
+    display: block;
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px gray;
-    transition:text-shadow .5s ease ;
 }
-header h1:hover{
-    text-shadow: 0px 0px 1px gray,0px 0px 2px var(--colorNegro);
+.form .btn{
+    width: 60%;
+    margin:.5rem auto;    
 }
-
-
+.link{
+    display: flex;
+    flex-direction: column;
+}
