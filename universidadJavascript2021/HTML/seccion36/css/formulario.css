@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+aside {
+	width: 25%;
+	margin: auto;
+}
+.form{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+    height: auto;
+    text-align: center;
+    
+}
+.form label{
+    padding-top: .4rem;
+}
+.form input,.form label{
+    display: block;
+    flex-basis:1.7rem;
+}
+.form > .btn{
+    width: 40%;
+    align-items: center;
+    margin: auto;
+}

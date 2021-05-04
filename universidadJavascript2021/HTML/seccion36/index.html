@@ -8,31 +8,34 @@
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
+		<iframe
+			src="https://www.youtube.com/embed/Imeq3GeRttw"
+			width="560"
+			height="315"
+		>
+		</iframe>
 
-		<img
-			src="https://lenguajehtml.com/img/logo.png"
-			alt="Logotipo de HTML5"
-			width="400"
-			height="453"
-		/>
-        <picture>
-            <source srcset="imagen.webp" />
-            <!-- Formato WebP -->
-            <source srcset="imagen.jxr" />
-            <!-- Formato JPEG XR -->
-            <img src="imagen.jpg" alt="Descripción de la imagen" />
-            <!-- Fallback -->
-          </picture>
+		<a href="http://www.bing.com/" target="marco">Abrir buscador Bing</a>
+		<iframe
+			name="marco"
+			width="100%"
+			height="450"
+			src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/38289724&visual=true"
+		>
+		</iframe>
+		<br />
 
-          <picture>
-            <source media="(min-width: 600px)"
-                    srcset="html5-logo-xl.png" />
-            <source media="(min-width: 300px) and (max-width: 600px)"
-                    srcset="html5-logo-large.png" />
-            <source media="(max-width: 50px)"
-                    srcset="html5-logo-small.png" />
-            <img src="html5-logo-medium.png" alt="HTML5 logo" />
-          </picture>
+		<iframe
+			src="http://pagina.com/apartado/"
+			srcdoc="<p>¡Hola! ¡Soy el <strong>texto del iframe</strong>!</p>"
+		></iframe>
 
+		<embed src="catgame.swf" width="400" height="250" />
+
+		<object data="catgame.swf">
+			<param name="quality" value="high" />
+		</object>
+
+                
 	</body>
 </html>

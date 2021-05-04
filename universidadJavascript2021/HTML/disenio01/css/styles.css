@@ -185,19 +185,28 @@ main {
 }
 .form {
     margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+    height: auto;
+    text-align: center;
 	
 	/* los elementos salten a la siguiente linea */
 	/* flex-wrap: wrap; */
     
 }
-.form label,.form input{
-    width: 100%;
-    display: block;
-    text-align: center;
+.form label{
+    padding-top: .4rem;
 }
-.form .btn{
-    width: 60%;
-    margin:.5rem auto;    
+.form input,.form label{
+    display: block;
+    flex-basis:1.7rem;
+}
+.form > .btn{
+    width: 40%;
+    align-items: center;
+    margin: auto;
 }
 .link{
     display: flex;
