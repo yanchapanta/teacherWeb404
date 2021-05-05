@@ -94,9 +94,9 @@ infoFactura(idGlobal,(error,facturaDelCallback)=>{
 })
 
 
-const boton=document.getElementById('title')
+const boton=document.getElementById('titulo')
 
 boton.addEventListener('click',(e)=>{
-    
+
 
 })
